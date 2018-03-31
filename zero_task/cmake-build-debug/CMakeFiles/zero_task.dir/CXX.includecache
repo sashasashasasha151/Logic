@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Code/Logic/zero_task/include/parser.h
+iostream
+-
+string
+-
+utility
+-
+result.h
+C:/Code/Logic/zero_task/include/result.h
+
+C:/Code/Logic/zero_task/include/result.h
+iostream
+-
+string
+-
+utility
+-
+vector
+-
+
+C:/Code/Logic/zero_task/main.cpp
+iostream
+-
+include/parser.h
+C:/Code/Logic/zero_task/include/parser.h
+
