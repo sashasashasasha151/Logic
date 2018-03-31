@@ -2,15 +2,14 @@
 
 #include <iostream>
 #include <string>
-#include <utility>
 #include <vector>
 
 using namespace std;
 
 struct Result {
     string expression;
-    Result * left;
-    Result * right;
+    Result * left = nullptr;
+    Result * right = nullptr;
     int number = 0;
 
     explicit Result(string expression) : expression(std::move(expression)) {
