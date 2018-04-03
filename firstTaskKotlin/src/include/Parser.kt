@@ -79,12 +79,13 @@ class Parser(private val expression: String) {
         if (operation == "&") {
             return 3
         }
-        return if (operation == "!") {
-            4
-        } else 0
+        if (operation == "!") {
+            return 4
+        }
+        return 0
     }
 
-    fun parse() : Result {
+    fun parse(): Result {
         index = 0
         return parsing()
     }
