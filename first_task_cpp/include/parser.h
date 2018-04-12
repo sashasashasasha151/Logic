@@ -1,9 +1,6 @@
-#pragma once
-
 #include <iostream>
 #include <string>
 #include "result.h"
-#include "global.h"
 
 using namespace std;
 

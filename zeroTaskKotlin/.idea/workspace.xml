@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="450ee740-11ee-4ddb-a8f9-931e21ac8827" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../firstTaskKotlin/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../firstTaskKotlin/firstTaskKotlin.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../firstTaskKotlin/src/Main.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../firstTaskKotlin/src/include/Checker.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../firstTaskKotlin/src/include/Parser.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../firstTaskKotlin/src/include/Result.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../firstTaskKotlin/src/include/axioms.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../firstTaskKotlin/src/input.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../zero_task/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/../firstTaskKotlin/src/Main.kt" afterPath="$PROJECT_DIR$/../firstTaskKotlin/src/Main.kt" />
+      <change beforePath="$PROJECT_DIR$/../firstTaskKotlin/src/input.txt" afterPath="$PROJECT_DIR$/../firstTaskKotlin/src/input.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/zeroTaskKotlin/Main.class" afterPath="$PROJECT_DIR$/out/production/zeroTaskKotlin/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/zeroTaskKotlin/include/Parser.class" afterPath="$PROJECT_DIR$/out/production/zeroTaskKotlin/include/Parser.class" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" afterPath="$PROJECT_DIR$/src/Main.kt" />
-      <change beforePath="$PROJECT_DIR$/src/include/Parser.kt" afterPath="$PROJECT_DIR$/src/include/Parser.kt" />
-      <change beforePath="$PROJECT_DIR$/../zero_task/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../zero_task/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -280,12 +267,12 @@
       <updated>1522405963016</updated>
       <workItem from="1522405966569" duration="1167000" />
       <workItem from="1522486222941" duration="3831000" />
-      <workItem from="1522520058713" duration="2845000" />
+      <workItem from="1522520058713" duration="3444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7843000" />
+    <option name="totallyTimeSpent" value="8442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />

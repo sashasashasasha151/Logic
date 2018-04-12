@@ -3,7 +3,8 @@
 #include <vector>
 #include <fstream>
 #include <unordered_map>
-#include "include/result.h"
+#include <ctime>
+#include <algorithm>
 #include "include/parser.h"
 #include "include/checker.h"
 
@@ -11,6 +12,8 @@
 using namespace std;
 
 vector<Result *> axioms;
+
+typedef std::unordered_multimap<string, int> simap;
 
 string ax[] = {"A->B->A",
                "(A->B)->(A->B->C)->(A->C)",
@@ -38,19 +41,14 @@ bool isEquals(Result *left, Result *right) {
 
 string make_result(Result *current_expression) {
     string sb = "";
-    if(current_expression->number == 2) {
-        sb+="(";
-        sb+=make_result(current_expression->left);
-        sb+=current_expression->expression;
-        sb+=make_result(current_expression->right);
-        sb+=")";
+    if (current_expression->number == 2) {
+        sb += "(" + make_result(current_expression->left) + current_expression->expression +
+              make_result(current_expression->right) + ")";
     }
-    if(current_expression->number == 1) {
-        sb+="!(";
-        sb+=make_result(current_expression->left);
-        sb+=")";
+    if (current_expression->number == 1) {
+        sb += "!(" + make_result(current_expression->left) + ")";
     }
-    if(current_expression->number == 0) {
+    if (current_expression->number == 0) {
         return current_expression->expression;
     }
     return sb;
@@ -78,11 +76,14 @@ vector<string> split2(string in) {
 }
 
 int main() {
+    std::ios::sync_with_stdio(false);
 
-    for (int i = 0; i < 10; ++i) {
-        axioms.push_back(Parser(ax[i]).parse());
+    for (const auto &i : ax) {
+        axioms.push_back(Parser(i).parse());
     }
 
+    ifstream cin("input.txt");
+    ofstream cout("output.txt");
 //    ifstream cin("in.txt");
 //    ofstream cout("wfwf.txt");
 
@@ -91,10 +92,11 @@ int main() {
 
     pair<string, string> input_string = split1(str);
     vector<string> as = split2(input_string.first);
-    vector<Result *> assumptions;
+
+    unordered_map<string, int> assumptions;
     for (int i = 0; i < as.size(); ++i) {
-        if (as[i] != "") {
-            assumptions.push_back(Parser(as[i]).parse());
+        if (!as[i].empty()) {
+            assumptions[make_result(Parser(as[i]).parse())] = i;
         }
     }
 
@@ -102,24 +104,25 @@ int main() {
 
     string s;
     vector<Result *> printed;
-    unordered_map<string, int> hashed, hashedH;
+    unordered_map<string, int> hashed;
+    unordered_multimap<string, int> hashedH;
+
     while (cin >> s) {
         Result *new_assumprion = Parser(s).parse();
+        string aN = make_result(new_assumprion);
         bool is_assum = false;
 
-        for (int j = 0; j < assumptions.size(); ++j) {
-            if (isEquals(new_assumprion, assumptions[j])) {
-                cout << "(" << i++ << ") " + s << " (Предп. " << j + 1 << ")\n";
-                is_assum = true;
-                break;
-            }
+
+        if (assumptions.find(aN) != assumptions.end()) {
+            cout << "(" << i++ << ") " + s << " (Предп. " << assumptions[aN] + 1 << ")\n";
+            is_assum = true;
         }
 
         if (is_assum) {
             printed.push_back(new_assumprion);
-            hashed[make_result(new_assumprion)] = i - 1;
+            hashed[aN] = i - 1;
             if (new_assumprion->expression == "->") {
-                hashedH[make_result(new_assumprion->right)] = i - 1;
+                hashedH.insert({make_result(new_assumprion->right), i - 1});
             }
             continue;
         }
@@ -135,36 +138,43 @@ int main() {
 
         if (is_assum) {
             printed.push_back(new_assumprion);
-            hashed[make_result(new_assumprion)] = i - 1;
+            hashed[aN] = i - 1;
             if (new_assumprion->expression == "->") {
-                hashedH[make_result(new_assumprion->right)] = i - 1;
+                hashedH.insert({make_result(new_assumprion->right), i - 1});
             }
             continue;
         }
 
-        string del = make_result(new_assumprion);
-        if (hashedH.find(del) != hashedH.end()) {
-            string dell = make_result(printed[hashedH[del] - 1]->left);
-            if (hashed.find(dell) != hashed.end()) {
-                cout << "(" << i++ << ") " + s << " (M.P. " << hashedH[del] << ", " << hashed[dell] << ")\n";
-                is_assum = true;
+        if (hashedH.find(aN) != hashedH.end()) {
+            auto range = hashedH.equal_range(aN);
+            auto x = range.first;
+            while (x != range.second) {
+                string dell = make_result(printed[x->second - 1]->left);
+                if (hashed.find(dell) != hashed.end()) {
+                    cout << "(" << i++ << ") " + s << " (M.P. " << x->second << ", " << hashed[dell] << ")\n";
+                    is_assum = true;
+                    break;
+                }
+                x++;
             }
         }
 
         if (is_assum) {
             printed.push_back(new_assumprion);
-            hashed[make_result(new_assumprion)] = i - 1;
+            hashed[aN] = i - 1;
             if (new_assumprion->expression == "->") {
-                hashedH[make_result(new_assumprion->right)] = i - 1;
+                hashedH.insert({make_result(new_assumprion->right), i - 1});
             }
             continue;
         }
         cout << "(" << i++ << ") " + s << " (Не доказано)\n";
+
         printed.push_back(new_assumprion);
-        hashed[make_result(new_assumprion)] = i - 1;
+        hashed[aN] = i - 1;
         if (new_assumprion->expression == "->") {
-            hashedH[make_result(new_assumprion->right)] = i - 1;
+            hashedH.insert({make_result(new_assumprion->right), i - 1});
         }
+
     }
 
     return 0;
