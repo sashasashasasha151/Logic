@@ -1,0 +1,4 @@
+/home/sasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4203.549/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/sasha/Code/Logic/first_task_cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sasha/Code/Logic/first_task_cpp/cmake-build-debug
