@@ -7,7 +7,7 @@ import java.io.File
 import java.util.stream.Collectors
 import java.nio.file.Files
 import java.nio.file.Paths
-
+import kotlin.collections.HashMap
 
 
 class Solve {
@@ -34,7 +34,7 @@ class Solve {
                         .append(")")
             }
             1 -> {
-                sb.append("!").append(makeResult(current_expression.left!!)).append(")")
+                sb.append("!(").append(makeResult(current_expression.left!!)).append(")")
             }
             0 -> {
                 return current_expression.expression
@@ -52,42 +52,51 @@ class Solve {
             axioms.add(Parser(input.nextLine()).parse())
         }
 
-        val path = Paths.get("input.txt")
-        //val path = Paths.get("src/in.txt")
+//        val path = Paths.get("input.txt")
+        val path = Paths.get("src/in.txt")
         val list = Files
                 .lines(path)
-                .filter(fun(s) = !s.isEmpty())
+                .filter { !it.isEmpty() }
                 .collect(Collectors.toList());
 
         val inputString = list[0].split("|-")
-        val assumptions = if (inputString[0] == "") mutableListOf<Result>() else
+
+        var assIndex = 1
+        val assumptions: HashMap<String, Int> = hashMapOf()
+
+        if (inputString[0] != "") {
             inputString[0].split(",")
-                    .stream()
-                    .map(fun(p) = Parser(p).parse())
-                    .collect(Collectors.toList<Result>())
+                    .forEach { assumptions[makeResult(Parser(it).parse())] = assIndex++ }
+        }
         var i = 1
         val printed = mutableListOf<Result>()
         val hashed = hashMapOf<String, Int>()
-        val hashedH = hashMapOf<String, Int>()
+        val hashedH = hashMapOf<String, MutableList<Int>>()
         val answers = mutableListOf<String>()
+
         for (h in 1 until list.size) {
-            val s = list[h]
+            var s = list[h]
             val newAssumption = Parser(s).parse()
+            s = makeResult(newAssumption)
             var isAssum = false
 
-            for (j in 0 until assumptions.size) {
-                if (isEquals(newAssumption, assumptions[j])) {
-                    answers.add("(${i++}) $s (Предп. ${j + 1})")
-                    isAssum = true
-                    break
-                }
+
+            if (assumptions.containsKey(s)) {
+                answers.add("(${i++}) $s (Предп. ${assumptions[s]})")
+                isAssum = true
             }
+
 
             if (isAssum) {
                 printed.add(newAssumption)
-                hashed[makeResult(newAssumption)] = i - 1
+                hashed[s] = i - 1
                 if (newAssumption.expression == "->") {
-                    hashedH[makeResult(newAssumption.right)] = i - 1
+                    val ss = makeResult(newAssumption.right)
+                    if (hashedH.containsKey(ss)) {
+                        hashedH[ss]!!.add(i - 1)
+                    } else {
+                        hashedH[ss] = mutableListOf(i - 1)
+                    }
                 }
                 continue
             }
@@ -103,48 +112,65 @@ class Solve {
 
             if (isAssum) {
                 printed.add(newAssumption)
-                hashed[makeResult(newAssumption)] = i - 1
+                hashed[s] = i - 1
                 if (newAssumption.expression == "->") {
-                    hashedH[makeResult(newAssumption.right)] = i - 1
+                    val ss = makeResult(newAssumption.right)
+                    if (hashedH.containsKey(ss)) {
+                        hashedH[ss]!!.add(i - 1)
+                    } else {
+                        hashedH[ss] = mutableListOf(i - 1)
+                    }
                 }
                 continue
             }
 
-            val del = makeResult(newAssumption)
-            if (hashedH.containsKey(del)) {
-                val dell = makeResult(printed[hashedH[del]!! - 1].left)
-                if (hashed.containsKey(dell)) {
-                    answers.add("(${i++}) $s (M.P. ${hashedH[del]}, ${hashed[dell]})")
-                    isAssum = true
+            if (hashedH.containsKey(s)) {
+                for (l in hashedH[s]!!) {
+                    val dell = makeResult(printed[l - 1].left)
+                    if (hashed.containsKey(dell)) {
+                        answers.add("(${i++}) $s (M.P. ${l}, ${hashed[dell]})")
+                        isAssum = true
+                        break
+                    }
                 }
             }
 
             if (isAssum) {
                 printed.add(newAssumption)
-                hashed[makeResult(newAssumption)] = i - 1
+                hashed[s] = i - 1
                 if (newAssumption.expression == "->") {
-                    hashedH[makeResult(newAssumption.right)] = i - 1
+                    val ss = makeResult(newAssumption.right)
+                    if (hashedH.containsKey(ss)) {
+                        hashedH[ss]!!.add(i - 1)
+                    } else {
+                        hashedH[ss] = mutableListOf(i - 1)
+                    }
                 }
                 continue
             }
 
             answers.add("(${i++}) $s (Не доказано)")
+
             printed.add(newAssumption)
-            hashed[makeResult(newAssumption)] = i - 1
+            hashed[s] = i - 1
             if (newAssumption.expression == "->") {
-                hashedH[makeResult(newAssumption.right)] = i - 1
+                val ss = makeResult(newAssumption.right)
+                if (hashedH.containsKey(ss)) {
+                    hashedH[ss]!!.add(i - 1)
+                } else {
+                    hashedH[ss] = mutableListOf(i - 1)
+                }
             }
         }
 
-        for (t in 0 until answers.size) {
-            println(answers[t]);
-        }
-
-//        Files.newBufferedWriter(Paths.get("output.txt")).use { bw ->
-//            for (t in 0 until answers.size) {
-//                bw.append(answers[t])
-//                bw.append("\n")
-//            }
+//        for (t in 0 until answers.size) {
+//            println(answers[t]);
 //        }
+        Files.newBufferedWriter(Paths.get("output.txt")).use { bw ->
+            for (t in 0 until answers.size) {
+                bw.append(answers[t])
+                bw.append("\n")
+            }
+        }
     }
 }

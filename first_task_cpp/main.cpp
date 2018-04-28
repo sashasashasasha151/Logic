@@ -82,8 +82,8 @@ int main() {
         axioms.push_back(Parser(i).parse());
     }
 
-    ifstream cin("input.txt");
-    ofstream cout("output.txt");
+    ifstream cin("in.txt");
+    ofstream cout("wfwf.txt");
 //    ifstream cin("in.txt");
 //    ofstream cout("wfwf.txt");
 

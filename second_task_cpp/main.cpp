@@ -37,7 +37,7 @@ bool isEquals(Result *left, Result *right) {
 }
 
 string make_result(Result *current_expression) {
-    string sb = "";
+    string sb;
     if (current_expression->number == 2) {
         sb += "(";
         sb += make_result(current_expression->left);
@@ -79,12 +79,12 @@ vector<string> split2(string in) {
 
 int main() {
 
-    for (int i = 0; i < 10; ++i) {
-        axioms.push_back(Parser(ax[i]).parse());
+    for (const auto &i : ax) {
+        axioms.push_back(Parser(i).parse());
     }
 
-//    ifstream cin("in.txt");
-//    ofstream cout("wfwf.txt");
+    ifstream cin("in.txt");
+    ofstream cout("wfwf.txt");
 
     string str;
     cin >> str;
@@ -95,7 +95,7 @@ int main() {
     vector<Result *> assumptions;
 
     for (int i = 0; i < as.size() - 1; ++i) {
-        if (as[i] != "") {
+        if (!as[i].empty()) {
             assumptions.push_back(Parser(as[i]).parse());
             cout << as[i];
             if (i != as.size() - 2) {
@@ -123,16 +123,13 @@ int main() {
     int i = 0;
 
     vector<Result *> input;
-    unordered_map<string, int> hashed, hashedH;
 
     while (cin >> s) {
         Result *r = Parser(s).parse();
         input.push_back(r);
-//        hashed[make_result(r)] = i;
-//        if (r->expression == "->") {
-//            hashedH[make_result(r->right)] = i++;
-//        }
     }
+
+    vector<Result *> printed;
 
     for (int k = 0; k < input.size(); ++k) {
         Result *r = input[k];
@@ -140,8 +137,8 @@ int main() {
 
         bool is_assum = false;
 
-        for (int j = 0; j < assumptions.size(); ++j) {
-            if (isEquals(r, assumptions[j])) {
+        for (auto &assumption : assumptions) {
+            if (isEquals(r, assumption)) {
                 is_assum = true;
                 break;
             }
@@ -152,10 +149,7 @@ int main() {
             cout << result << "->(" << _alpha << "->" << result << ")\n";
             string out = "(" + _alpha + "->" + result + ")";
             cout << out << "\n";
-            hashed[make_result(r)] = i;
-            if (r->expression == "->") {
-                hashedH[make_result(r->right)] = i++;
-            }
+            printed.push_back(r);
             continue;
         }
 
@@ -171,45 +165,44 @@ int main() {
             cout << result << "\n";
             cout << result << "->(" << _alpha << "->" << result << ")\n";
             cout << _alpha << "->" << result << "\n";
-            hashed[make_result(r)] = i;
-            if (r->expression == "->") {
-                hashedH[make_result(r->right)] = i++;
-            }
+            printed.push_back(r);
             continue;
         }
 
         if (isEquals(r, alpha)) {
             cout << something_strange;
             cout << _alpha << "->" << result << "\n";
-            hashed[make_result(r)] = i;
-            if (r->expression == "->") {
-                hashedH[make_result(r->right)] = i++;
-            }
+            printed.push_back(r);
             continue;
         }
 
         int lft;
 
-        if (hashedH.find(result) != hashedH.end()) {
-            string dell = make_result(input[hashedH[result]]->left);
-            if (hashed.find(dell) != hashed.end()) {
-                lft = hashed[dell];
-                is_assum = true;
+        for (int j = printed.size() - 1; j >= 0; --j) {
+            if (printed[j]->expression == "->" && isEquals(r, printed[j]->right)) {
+                for (int k = printed.size() - 1; k >= 0; --k) {
+                    if (isEquals(printed[k], printed[j]->left)) {
+                        lft = k;
+                        is_assum = true;
+                        break;
+                    }
+                }
+                if (is_assum) {
+                    break;
+                }
             }
         }
 
-        if(is_assum) {
-            string _lft = make_result(input[lft]);
+
+        if (is_assum) {
+            string _lft = make_result(printed[lft]);
 
             string s1 =
-                    "(" + _alpha + "->" + _lft + ")->((" + _alpha + "->(" + _lft + "->" + result + "))->(" + _alpha +
-                    "->" + result + "))\n";
+                    "(" + _alpha + "->" + _lft + ")->((" + _alpha + "->(" + _lft + "->" + result + "))->(" + _alpha + "->" + result + "))\n";
             string s2 = "((" + _alpha + "->(" + _lft + "->" + result + "))->(" + _alpha + "->" + result + "))\n";
             cout << s1 << s2 << _alpha << "->" << result << "\n";
-            hashed[make_result(r)] = i;
-            if (r->expression == "->") {
-                hashedH[make_result(r->right)] = i++;
-            }
+            printed.push_back(r);
+            continue;
         } else {
             while (true) {
                 i++;

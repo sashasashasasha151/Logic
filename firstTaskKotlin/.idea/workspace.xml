@@ -8,11 +8,44 @@
       <change afterPath="$PROJECT_DIR$/../SecondTaskJava/src/include/Parser.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SecondTaskJava/src/include/Result.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SecondTaskJava/src/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Solve.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/in.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Check.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Checker.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Deduction.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Merge.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Parser.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/ProofMaker.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Proofs.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Result.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/ResultToString.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/apna.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/axioms.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/ded.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/iAB.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/iAnB.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/inAB.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/inAnB.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/nnA.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/pAB.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/pAnB.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/pnAB.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/pnAnB.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/uAB.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/uAnB.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/unAB.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/unAnB.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstTaskKotlin/Main$main$assumpt$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstTaskKotlin/Main$main$list$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstTaskKotlin/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstTaskKotlin/include/Checker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstTaskKotlin/include/Checker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstTaskKotlin/include/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstTaskKotlin/include/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstTaskKotlin/include/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/firstTaskKotlin/include/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/firstTaskKotlin/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Solve.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solve.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/in.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/in.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../first_task_cpp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeCache.txt" afterDir="false" />
@@ -22,8 +55,18 @@
       <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/first_task_cpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/first_task_cpp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/first_task_cpp.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/first_task_cpp.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/first_task_cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/first_task_cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/in.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/in.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/wfwf.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/wfwf.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../first_task_cpp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../second_task_cpp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../second_task_cpp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../second_task_cpp/cmake-build-debug/CMakeFiles/first_task_cpp.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../second_task_cpp/cmake-build-debug/CMakeFiles/first_task_cpp.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../second_task_cpp/cmake-build-debug/first_task_cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../second_task_cpp/cmake-build-debug/first_task_cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../second_task_cpp/cmake-build-debug/in.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../second_task_cpp/cmake-build-debug/in.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../second_task_cpp/cmake-build-debug/wfwf.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../second_task_cpp/cmake-build-debug/wfwf.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../second_task_cpp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../second_task_cpp/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,16 +93,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="in.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/in.txt">
+      <file leaf-file-name="Main.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Makefile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -68,20 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Checker.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/include/Checker.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Parser.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/include/Parser.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="34">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -89,31 +123,36 @@
       <file leaf-file-name="Result.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/include/Result.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="204">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Solve.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Solve.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Solve.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+            <state relative-caret-position="260">
+              <caret line="58" column="41" lean-forward="true" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
               <folding>
-                <element signature="e#0#301#0" expanded="true" />
+                <element signature="e#0#229#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.kt">
+      <file leaf-file-name="in.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/in.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="580">
+              <caret line="3229" selection-start-line="3229" selection-end-line="3229" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="output.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="manifest.txt" pinned="false" current-in-tab="false">
@@ -121,6 +160,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Checker.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/include/Checker.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -139,6 +187,11 @@
     <findStrings>
       <find>A</find>
       <find>B</find>
+      <find />
+      <find>,</find>
+      <find>н</find>
+      <find>не</find>
+      <find>)</find>
     </findStrings>
     <replaceStrings>
       <replace>((W-&gt;R)-&gt;(E-&gt;R)-&gt;(W|E-&gt;R))</replace>
@@ -154,14 +207,15 @@
         <option value="$PROJECT_DIR$/src/include/Checker.java" />
         <option value="$PROJECT_DIR$/src/include/Result.kt" />
         <option value="$PROJECT_DIR$/src/input.txt" />
-        <option value="$PROJECT_DIR$/src/include/Parser.kt" />
         <option value="$PROJECT_DIR$/src/include/Checker.kt" />
         <option value="$PROJECT_DIR$/src/include/Global.kt" />
-        <option value="$PROJECT_DIR$/src/in.txt" />
         <option value="$PROJECT_DIR$/manifest.txt" />
         <option value="$PROJECT_DIR$/Makefile" />
-        <option value="$PROJECT_DIR$/src/Solve.kt" />
         <option value="$PROJECT_DIR$/src/Main.kt" />
+        <option value="$PROJECT_DIR$/src/include/Parser.kt" />
+        <option value="$PROJECT_DIR$/src/Solve.kt" />
+        <option value="$PROJECT_DIR$/output.txt" />
+        <option value="$PROJECT_DIR$/src/in.txt" />
       </list>
     </option>
   </component>
@@ -181,10 +235,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="341" />
-    <option name="y" value="-28" />
-    <option name="width" value="1400" />
-    <option name="height" value="990" />
+    <option name="x" value="344" />
+    <option name="width" value="1390" />
+    <option name="height" value="994" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -238,7 +291,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -252,7 +305,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -283,6 +336,16 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="firstTaskKotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
       <option name="WORKING_DIRECTORY" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -320,8 +383,13 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list>
+      <item itemvalue="Kotlin.Main" />
+      <item itemvalue="Kotlin.MainKt" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.Main" />
       </list>
     </recent_temporary>
@@ -349,7 +417,7 @@
       <workItem from="1523287773818" duration="736000" />
       <workItem from="1524685720280" duration="111000" />
       <workItem from="1524730050144" duration="101000" />
-      <workItem from="1524730180709" duration="3366000" />
+      <workItem from="1524730180709" duration="32766000" />
     </task>
     <task id="LOCAL-00001" summary="This shit passed 8 tests">
       <created>1522613352195</created>
@@ -365,11 +433,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522762940453</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First task on Kotlin">
+      <created>1524733595378</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1524733595378</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66570000" />
+    <option name="totallyTimeSpent" value="95970000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -386,62 +461,33 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295583" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3264865" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295583" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2744681" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.24756756" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295583" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27351353" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24756756" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.44108108" visible="true" weight="0.1578125" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.43783784" visible="true" weight="0.10729167" />
       <window_info anchor="right" id="Database" order="8" weight="0.32975295" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907662" />
-      <window_info id="Structure" order="4" sideWeight="0.5589189" side_tool="true" visible="true" weight="0.1578125" />
+      <window_info id="Structure" order="4" sideWeight="0.56216216" side_tool="true" visible="true" weight="0.10729167" />
       <window_info anchor="right" auto_hide="true" id="Ant Build" order="1" weight="0.24973147" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Favorites" order="9" sideWeight="0.5232163" side_tool="true" weight="0.150913" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34577388" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34486488" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32711306" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295583" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.47749725" visible="true" weight="0.18229167" />
-      <window_info id="Structure" order="4" sideWeight="0.5225027" side_tool="true" visible="true" weight="0.18229167" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" auto_hide="true" id="Ant Build" order="1" weight="0.24973147" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295583" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17892426" />
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Database" order="8" weight="0.32975295" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.24801812" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.398641" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info id="Capture Tool" order="1" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32842582" />
-      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32975295" />
-      <window_info anchor="right" id="Favorites" order="9" sideWeight="0.5232163" side_tool="true" weight="0.150913" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -452,11 +498,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="This shit passed 8 tests" />
     <MESSAGE value="17test TL" />
-    <option name="LAST_COMMIT_MESSAGE" value="17test TL" />
+    <MESSAGE value="First task on Kotlin" />
+    <option name="LAST_COMMIT_MESSAGE" value="First task on Kotlin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/Solve.kt</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="19" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -464,13 +519,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/include/Checker.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/include/Parser.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -719,15 +767,8 @@
     <entry file="file://$PROJECT_DIR$/src/include/Global.kt" />
     <entry file="file://$PROJECT_DIR$/src/include/Parser.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/include/Result.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -738,41 +779,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/include/Checker.kt">
+    <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/include/Result.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/in.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="580">
+          <caret line="3229" selection-start-line="3229" selection-end-line="3229" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/include/Checker.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solve.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        <state relative-caret-position="260">
+          <caret line="58" column="41" lean-forward="true" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
           <folding>
-            <element signature="e#0#301#0" expanded="true" />
+            <element signature="e#0#229#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
