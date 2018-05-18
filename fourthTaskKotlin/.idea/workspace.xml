@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d3235dd-9ca9-423d-bcaa-eedb1eca422d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fourthTaskKotlin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fourth_task_cpp/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fourth_task_cpp/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fourth_task_cpp/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ThirdTaskKotlin/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ThirdTaskKotlin/src/in.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/in.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../second_task_cpp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../second_task_cpp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,8 +68,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1920" />
-    <option name="height" value="1039" />
+    <option name="x" value="100" />
+    <option name="width" value="1390" />
+    <option name="height" value="994" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -198,15 +185,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526556688768</updated>
-      <workItem from="1526556693951" duration="6098000" />
+      <workItem from="1526556693951" duration="6397000" />
     </task>
+    <task id="LOCAL-00001" summary="4 task complete">
+      <created>1526654504156</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526654504157</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6098000" />
+    <option name="totallyTimeSpent" value="6397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1039" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -243,6 +239,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="4 task complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="4 task complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

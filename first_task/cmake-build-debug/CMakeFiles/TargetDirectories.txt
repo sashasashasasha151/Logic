@@ -1,3 +1,0 @@
-C:/Code/Logic/first_task/cmake-build-debug/CMakeFiles/first_task.dir
-C:/Code/Logic/first_task/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/Logic/first_task/cmake-build-debug/CMakeFiles/rebuild_cache.dir
