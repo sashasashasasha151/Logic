@@ -10,8 +10,8 @@ val p = Proofs()
 
 fun main(args: Array<String>) {
 //    val `in` = Scanner(System.`in`)
-//    val `in` = Scanner(File("src/in.txt"))
-    val `in` = Scanner(File("input.txt"))
+    val `in` = Scanner(File("src/in.txt"))
+//    val `in` = Scanner(File("input.txt"))
 
     val string = `in`.nextLine()
 
@@ -282,6 +282,8 @@ fun main(args: Array<String>) {
 //        println()
 //    }
 
+    val hhh = hashSetOf<String>()
+
     Files.newBufferedWriter(Paths.get("output.txt")).use { bw ->
         var c = 0
         while (string[c] != '=') {
@@ -294,10 +296,15 @@ fun main(args: Array<String>) {
         }
         bw.append("\n")
         for (t in 0 until answer.size) {
-            bw.append(resultToString(answer[t]))
+            val str = resultToString(answer[t])
+            if(hhh.contains(str)) {
+                continue
+            }
+            bw.append(str)
+            hhh.add(str)
             bw.append("\n")
         }
-        var ans = answer[answer.size-1]
+        var ans = answer[answer.size - 1]
         for (a in assumptions) {
             bw.append(a)
             bw.append("\n")

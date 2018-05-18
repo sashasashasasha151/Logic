@@ -11,73 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7654e41c-0282-47c8-a133-e297ee036e5c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../SecondTaskJava/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SecondTaskJava/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SecondTaskJava/src/include/Checker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SecondTaskJava/src/include/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SecondTaskJava/src/include/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SecondTaskJava/src/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/in.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Check.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Checker.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Deduction.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Merge.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Parser.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/ProofMaker.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Proofs.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/Result.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/ResultToString.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/apna.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/axioms.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/ded.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/iAB.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/iAnB.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/inAB.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/inAnB.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/nnA.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/pAB.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/pAnB.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/pnAB.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/pnAnB.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/uAB.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/uAnB.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/unAB.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdTaskKotlin/src/include/proofsTXT/unAnB.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../firstTaskKotlin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../firstTaskKotlin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../firstTaskKotlin/out/production/firstTaskKotlin/Main$main$assumpt$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../firstTaskKotlin/out/production/firstTaskKotlin/Main$main$list$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../firstTaskKotlin/out/production/firstTaskKotlin/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../firstTaskKotlin/out/production/firstTaskKotlin/include/Checker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../firstTaskKotlin/out/production/firstTaskKotlin/include/Checker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../firstTaskKotlin/out/production/firstTaskKotlin/include/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../firstTaskKotlin/out/production/firstTaskKotlin/include/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../firstTaskKotlin/out/production/firstTaskKotlin/include/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/../firstTaskKotlin/out/production/firstTaskKotlin/include/Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../firstTaskKotlin/out/production/firstTaskKotlin/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../firstTaskKotlin/src/Solve.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../firstTaskKotlin/src/Solve.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../firstTaskKotlin/src/in.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../firstTaskKotlin/src/in.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/first_task_cpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/first_task_cpp.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/first_task_cpp.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/CMakeFiles/first_task_cpp.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/first_task_cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/first_task_cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/in.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/in.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/wfwf.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/cmake-build-debug/wfwf.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../first_task_cpp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../first_task_cpp/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/first_task_cpp.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/first_task_cpp.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/first_task_cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/first_task_cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/in.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/in.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/wfwf.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/wfwf.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="7654e41c-0282-47c8-a133-e297ee036e5c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -110,7 +44,7 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="3349">
               <caret line="197" column="47" selection-start-line="197" selection-start-column="47" selection-end-line="197" selection-end-column="47" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -122,7 +56,7 @@
       <file leaf-file-name="unordered_map.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/include/c++/7.3.0/bits/unordered_map.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="16575">
               <caret line="975" selection-start-line="975" selection-end-line="975" />
             </state>
           </provider>
@@ -131,7 +65,7 @@
       <file leaf-file-name="hashtable_policy.h" pinned="false" current-in-tab="false">
         <entry file="file:///usr/include/c++/7.3.0/bits/hashtable_policy.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="12427">
               <caret line="731" selection-start-line="731" selection-end-line="731" />
             </state>
           </provider>
@@ -259,6 +193,7 @@
       <workItem from="1523529842976" duration="2498000" />
       <workItem from="1524682710616" duration="1807000" />
       <workItem from="1524787605554" duration="9693000" />
+      <workItem from="1524935860808" duration="64000" />
     </task>
     <task id="LOCAL-00001" summary="hw2 complete">
       <created>1523513838440</created>
@@ -271,19 +206,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26785000" />
+    <option name="totallyTimeSpent" value="26849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1039" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49405405" visible="true" weight="0.15" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49297297" visible="true" weight="0.15" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32864866" />
       <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32864866" />
-      <window_info id="Structure" order="1" sideWeight="0.5059459" side_tool="true" visible="true" weight="0.15" />
+      <window_info id="Structure" order="1" sideWeight="0.50702703" side_tool="true" visible="true" weight="0.15" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32901832" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -295,6 +230,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32864866" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +256,44 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/in.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3349">
+          <caret line="197" column="47" selection-start-line="197" selection-start-column="47" selection-end-line="197" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/7.3.0/bits/unordered_map.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16575">
+          <caret line="975" selection-start-line="975" selection-end-line="975" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/7.3.0/bits/hashtable_policy.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12427">
+          <caret line="731" selection-start-line="731" selection-end-line="731" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/wfwf.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/in.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -499,21 +473,21 @@
     </entry>
     <entry file="file:///usr/include/c++/7.3.0/bits/unordered_map.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
+        <state relative-caret-position="16575">
           <caret line="975" selection-start-line="975" selection-end-line="975" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/include/c++/7.3.0/bits/hashtable_policy.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="12427">
           <caret line="731" selection-start-line="731" selection-end-line="731" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="3349">
           <caret line="197" column="47" selection-start-line="197" selection-start-column="47" selection-end-line="197" selection-end-column="47" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
