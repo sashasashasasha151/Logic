@@ -1,285 +1,173 @@
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.util.stream.Collectors
+import java.util.stream.IntStream
 import java.util.stream.Stream
 
 var n = 0
 var G = mutableListOf<MutableList<Boolean>>()
-var _G = mutableListOf<MutableList<Boolean>>()
+var rG = mutableListOf<MutableList<Boolean>>()
 var sup = mutableListOf<MutableList<Int>>()
 var inf = mutableListOf<MutableList<Int>>()
-var impl = mutableListOf<MutableList<Int>>()
 var used = mutableListOf<Boolean>()
 
 fun dfs(k: Int) {
     used[k] = true
-    for (i in 0 until n) {
-        if (G[k][i] && !used[i]) {
-            dfs(i)
-        }
-    }
+    IntStream.range(0, n).filter { G[k][it] && !used[it] }.forEach { dfs(it) }
 }
 
-fun get_sup(l: Int, r: Int): Int {
-    val conc = mutableListOf<Boolean>()
-    for (i in 0 until n) {
-        conc.add(_G[l][i] && _G[r][i])
-    }
-    var k = true
-    for (i in 0 until n) {
-        if (conc[i]) {
-            k = false
-            break
-        }
-    }
+fun getSup(l: Int, r: Int): Int {
+    val conc = Stream.iterate(0, { it + 1 }).limit(n.toLong()).map { rG[l][it] && rG[r][it] }.collect(Collectors.toList())
+    if (conc.stream().allMatch { !it }) return -1
 
-    if (k) {
+    var kk = -1
+
+    if (IntStream.range(0, n).filter { conc[it] }.anyMatch {
+                if (!IntStream.range(0, n).filter { j: Int -> it != j }.anyMatch { j: Int -> G[it][j] && conc[j] }) {
+                    if (kk == -1) {
+                        kk = it
+                    } else {
+                        return@anyMatch true
+                    }
+                }
+                return@anyMatch false
+            }) {
+        return -1
+    }
+    return kk
+}
+
+fun getInf(l: Int, r: Int): Int {
+    val conc = Stream.iterate(0, { it + 1 }).limit(n.toLong()).map { G[l][it] && G[r][it] }.collect(Collectors.toList())
+    if (conc.stream().allMatch { !it }) {
         return -1
     }
 
     var kk = -1
-    for (i in 0 until n) {
-        if (conc[i]) {
-            var check = false
-            for (j in 0 until n) {
-                if (i == j) {
-                    continue
-                }
-                if (G[i][j] && conc[j]) {
-                    check = true
-                    break
-                }
-            }
-            if (!check) {
-                if (kk == -1) {
-                    kk = i
-                } else {
-                    return -1
-                }
-            }
-        }
-    }
 
+    if (IntStream.range(0, n).filter { conc[it] }.anyMatch {
+                if (!IntStream.range(0, n).filter { j: Int -> it != j }.anyMatch { j: Int -> rG[it][j] && conc[j] }) {
+                    if (kk == -1) {
+                        kk = it
+                    } else {
+                        return@anyMatch true
+                    }
+                }
+                return@anyMatch false
+            }) {
+        return -1
+    }
     return kk
 }
 
-fun get_inf(l: Int, r: Int): Int {
-    val conc = mutableListOf<Boolean>()
-    for (i in 0 until n) {
-        conc.add(G[l][i] && G[r][i])
-    }
-    var k = true
-    for (i in 0 until n) {
-        if (conc[i]) {
-            k = false
-            break
-        }
-    }
+fun getImpl(a: Int, b: Int): Int {
+    val conc = Stream.iterate(0, { it + 1 }).limit(n.toLong()).map { G[b][inf[a][it]] }.collect(Collectors.toList())
 
-    if (k) {
+    if (conc.stream().allMatch { !it }) {
         return -1
     }
 
     var kk = -1
-    for (i in 0 until n) {
-        if (conc[i]) {
-            var check = false
-            for (j in 0 until n) {
-                if (i == j) {
-                    continue
+
+    if (IntStream.range(0, n).filter { conc[it] }.anyMatch {
+                if (!IntStream.range(0, n).filter { j: Int -> it != j }.anyMatch { j: Int -> rG[it][j] && conc[j] }) {
+                    if (kk == -1) {
+                        kk = it
+                    } else {
+                        return@anyMatch true
+                    }
                 }
-                if (_G[i][j] && conc[j]) {
-                    check = true
-                    break
-                }
-            }
-            if (!check) {
-                if (kk == -1) {
-                    kk = i
-                } else {
-                    return -1
-                }
-            }
-        }
-    }
-
-    return kk
-}
-
-fun get_impl(a: Int, b: Int): Int {
-    val conc = mutableListOf<Boolean>()
-    for (c in 0 until n) {
-        if (G[b][inf[a][c]]) {
-            conc.add(true)
-        } else {
-            conc.add(false)
-        }
-    }
-
-    var k = true
-    for (i in 0 until n) {
-        if (conc[i]) {
-            k = false
-            break
-        }
-    }
-
-    if (k) {
+                return@anyMatch false
+            }) {
         return -1
     }
-
-    var kk = -1
-    for (i in 0 until n) {
-        if (conc[i]) {
-            var check = false
-            for (j in 0 until n) {
-                if (i == j) {
-                    continue
-                }
-                if (_G[i][j] && conc[j]) {
-                    check = true
-                    break
-                }
-            }
-            if (!check) {
-                if (kk == -1) {
-                    kk = i
-                } else {
-                    return -1
-                }
-            }
-        }
-    }
-
     return kk
 }
-
 
 fun main(args: Array<String>) {
-    val path = Paths.get("input.txt")
-//    val path = Paths.get("src/in.txt")
+//    val path = Paths.get("input.txt")
+    val path = Paths.get("src/in.txt")
 
-    val list = Files
-            .lines(path)
-            .filter { !it.isEmpty() }
-            .map {
-                it.split(" ")
-                        .stream()
-                        .filter { !it.isEmpty() }
-                        .map { it.toInt() }
-                        .collect(Collectors.toList())
-            }
-            .collect(Collectors.toList())
+    val list = Files.lines(path).filter { !it.isEmpty() }.map { it -> it.split(" ").stream().filter { !it.isEmpty() }.map { it.toInt() }.collect(Collectors.toList()) }.collect(Collectors.toList())
 
     n = list[0][0]
 
     G = Stream.generate { Stream.generate { false }.limit(n.toLong()).collect(Collectors.toList()) }.limit(n.toLong()).collect(Collectors.toList())
-    _G = Stream.generate { Stream.generate { false }.limit(n.toLong()).collect(Collectors.toList()) }.limit(n.toLong()).collect(Collectors.toList())
+    rG = Stream.generate { Stream.generate { false }.limit(n.toLong()).collect(Collectors.toList()) }.limit(n.toLong()).collect(Collectors.toList())
     sup = Stream.generate { Stream.generate { -1 }.limit(n.toLong()).collect(Collectors.toList()) }.limit(n.toLong()).collect(Collectors.toList())
     inf = Stream.generate { Stream.generate { -1 }.limit(n.toLong()).collect(Collectors.toList()) }.limit(n.toLong()).collect(Collectors.toList())
-    impl = Stream.generate { Stream.generate { -1 }.limit(n.toLong()).collect(Collectors.toList()) }.limit(n.toLong()).collect(Collectors.toList())
 
-    for (i in 1 until list.size) {
-        for (j in 0 until list[i].size) {
-            G[list[i][j] - 1][i - 1] = true
-            _G[i - 1][list[i][j] - 1] = true
+    list.indices.toList().stream().skip(1).forEach {
+        list[it].stream().forEach { i: Int ->
+            G[i - 1][it - 1] = true
+            rG[it - 1][i - 1] = true
         }
     }
 
-    for (i in 0 until n) {
+    IntStream.range(0, n).forEach { it ->
         used = Stream.generate { false }.limit(n.toLong()).collect(Collectors.toList())
-        dfs(i)
-        for (j in 0 until n) {
-            if (used[j]) {
-                G[i][j] = true
-                _G[j][i] = true
-            }
+        dfs(it)
+        IntStream.range(0, n).filter { used[it] }.forEach { i: Int ->
+            G[it][i] = true
+            rG[i][it] = true
         }
     }
 
-    // a*(b+c)=a*b+a*c
-    for (i in 0 until n) {
-        for (j in 0 until n) {
-            if (sup[i][j] == -1) {
-                sup[i][j] = get_sup(i, j)
-                if (sup[i][j] == -1) {
-                    print("Операция '+' не определена: ${i + 1}+${j + 1}")
-                    return
+    if (IntStream.range(0, n).anyMatch {
+                IntStream.range(0, n).anyMatch second@{ j: Int ->
+                    sup[it][j] = getSup(it, j)
+                    if (sup[it][j] == -1) {
+                        print("Операция '+' не определена: ${it + 1}+${j + 1}")
+                        return@second true
+                    }
+                    return@second false
                 }
-                sup[j][i] = sup[i][j]
-            }
-        }
+            }) {
+        return
     }
 
-    for (i in 0 until n) {
-        for (j in 0 until n) {
-            if (inf[i][j] == -1) {
-                inf[i][j] = get_inf(i, j)
-                if (inf[i][j] == -1) {
-                    print("Операция '*' не определена: ${i + 1}*${j + 1}")
-                    return
+    if (IntStream.range(0, n).anyMatch {
+                IntStream.range(0, n).anyMatch second@{ j: Int ->
+                    inf[it][j] = getInf(it, j)
+                    if (inf[it][j] == -1) {
+                        print("Операция '*' не определена: ${it + 1}*${j + 1}")
+                        return@second true
+                    }
+                    return@second false
                 }
-                inf[j][i] = inf[i][j]
-            }
-        }
+            }) {
+        return
     }
 
-    for (a in 0 until n) {
-        for (b in 0 until n) {
-            for (c in 0 until n) {
-                if (inf[a][sup[b][c]] != sup[inf[a][b]][inf[a][c]]) {
-                    print("Нарушается дистрибутивность: ${a + 1}*(${b + 1}+${c + 1})")
-                    return
+    if (IntStream.range(0, n).anyMatch { a: Int ->
+                IntStream.range(0, n).anyMatch { b: Int ->
+                    IntStream.range(0, n).anyMatch third@{ c: Int ->
+                        if (inf[a][sup[b][c]] != sup[inf[a][b]][inf[a][c]]) {
+                            print("Нарушается дистрибутивность: ${a + 1}*(${b + 1}+${c + 1})")
+                            return@third true
+                        }
+                        return@third false
+                    }
                 }
-            }
-        }
+            }) {
+        return
     }
 
-    //a->b
-    for (a in 0 until n) {
-        for (b in 0 until n) {
-            impl[a][b] = get_impl(a, b)
-            if (impl[a][b] == -1) {
-                print("Операция '->' не определена: ${a + 1}->${b + 1}")
-                return
-            }
-        }
-    }
+    val min = IntStream.range(0, n).filter { IntStream.range(0, n).filter { j: Int -> it != j }.allMatch { j: Int -> !G[it][j] } }.findFirst().asInt
 
-    //a+~b
-    var min = -1
-    for (i in 0 until n) {
-        var q = false
-        for (j in 0 until n) {
-            if (i == j) {
-                continue
-            }
-            if (G[i][j]) {
-                q = true
-                break
-            }
-        }
-        if (!q) {
-            min = i
-            break
-        }
-    }
+    val max = getImpl(0, 0)
 
-    val max = get_impl(0, 0)
+    val rA = Stream.iterate(0, { it + 1 }).limit(n.toLong()).map { getImpl(it, min) }.collect(Collectors.toList())
 
-    val _a = mutableListOf<Int>()
-    for (i in 0 until n) {
-        _a.add(get_impl(i, min))
-    }
-
-    for (i in 0 until n) {
-        if (sup[i][_a[i]] != max) {
-            print("Не булева алгебра: ${i + 1}+~${i + 1}")
-            return
-        }
+    if (IntStream.range(0, n).anyMatch {
+                if (sup[it][rA[it]] != max) {
+                    print("Не булева алгебра: ${it + 1}+~${it + 1}")
+                    return@anyMatch true
+                }
+                return@anyMatch false
+            }) {
+        return
     }
 
     print("Булева алгебра")
-
-    return
 }
