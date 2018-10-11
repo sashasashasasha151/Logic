@@ -4,9 +4,6 @@
     <list default="true" id="78eff99c-9191-4a49-b430-a6b6f55cf17a" name="Default" comment="This shit passed 8 tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fourthTaskKotlin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fourthTaskKotlin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fourthTaskKotlin/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../fourthTaskKotlin/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fourthTaskKotlin/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../fourthTaskKotlin/src/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zeroTaskKotlin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zeroTaskKotlin/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,12 +28,13 @@
     <session id="949261787">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit" />
@@ -375,6 +373,7 @@
       <workItem from="1538471583487" duration="3051000" />
       <workItem from="1538980026727" duration="599000" />
       <workItem from="1539022136234" duration="279000" />
+      <workItem from="1539183923738" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="This shit passed 8 tests">
       <created>1522613352195</created>
@@ -401,7 +400,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100553000" />
+    <option name="totallyTimeSpent" value="101152000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -414,6 +413,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1039" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
