@@ -1,3 +1,0 @@
-C:/Code/Logic/zero_task/cmake-build-debug/CMakeFiles/zero_task.dir
-C:/Code/Logic/zero_task/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/Logic/zero_task/cmake-build-debug/CMakeFiles/rebuild_cache.dir

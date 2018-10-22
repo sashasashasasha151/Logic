@@ -1,3 +1,0 @@
-C:\Users\sasha\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\181.4203.549\bin\cmake\bin\cmake.exe -E remove -f CMakeFiles\zero_task.dir/objects.a
-C:\MinGW\MinGW\bin\ar.exe cr CMakeFiles\zero_task.dir/objects.a @CMakeFiles\zero_task.dir\objects1.rsp
-C:\MinGW\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\zero_task.dir/objects.a -Wl,--no-whole-archive  -o zero_task.exe -Wl,--out-implib,libzero_task.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\zero_task.dir\linklibs.rsp
